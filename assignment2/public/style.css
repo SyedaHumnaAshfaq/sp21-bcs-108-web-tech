@@ -1,0 +1,234 @@
+
+.twocards{
+    display: flex;
+    flex-direction: row;
+}
+.twocards a{
+    text-decoration: none;
+    color: black;
+}
+.mycardtitle{
+    font-size: 60px;
+    font-family:"Dancing Script";
+    text-align: left;
+    top:50%;
+    padding: 10px;
+}
+.mybtn{
+    padding: 10px;
+    width: 100px;
+}
+.mycardsubtitle{
+    font-family:sans-serif;
+    text-align: left;
+    top:50%;
+    padding: 10px;
+
+}
+
+.mycard{
+    background-color:bisque ;
+    border: none;
+    
+}
+.mycardbody{
+    padding: 0px;
+    margin: 0px;
+}
+.mytextcardbody{
+    
+    font-family: sans-serif;
+    text-align: left;
+    padding-top:25%;
+}
+.image{
+    height: 40rem;
+    width: 100%;
+
+}
+.smallcards{
+    padding: 10x;
+    margin: 20px;
+    margin-top: 80px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid salmon;
+}
+.myoptionimages{
+    height: 50px;
+    width: 50px;
+    margin: 20%;
+    margin-bottom: 10%;
+    /* margin-right:50%; */
+}
+.myoptioncardbody{
+  font-size: 18px;
+  /* font-weight: bold; */
+  
+    
+}
+.myoptioncardbody:hover{
+    font-size: 20px;
+    transition:ease-in;
+    cursor: pointer;
+    background-color: lightsalmon;
+}
+.smallcards hr{
+    border: 1px solid grey;
+    width: 80%;
+}
+.heading{
+    display: flex;
+    font-size: 40px;
+    font-family:dancing script;
+    align-items: center;
+    justify-content: center;
+    color:darkslategrey;
+    flex-direction: column;
+    margin: 25px;
+    
+}
+.limitededition{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+}
+.myimagecardheader{
+    height: 60%;
+    width: 100%;
+    background-color: white;
+}
+.logo{
+    font-size: 20px;
+    font-family: dancing script;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.mynavbar{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    flex-grow:initial;
+}
+
+.limitedimage{
+    height:100%;
+    width: 100%;
+}
+.mylimitedcard{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid salmon;
+    height: 80%;
+}
+.anchorlimited{
+    text-decoration: none;
+    color: black;
+}
+.mylimitedcard:hover{
+    height: 85%;
+    transform: scale(1.1);
+    transition: 1s;
+    
+}
+.col1{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+.lasthr{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+.col2 li,.col2 ul{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-bottom: 2px;
+    
+}
+.col2{
+    font-size: 16px;
+    text-align: left;
+}
+.col2 li:hover{
+    text-decoration: underline;
+}
+i{
+    margin-right: 1px;
+    padding: 2px;
+}
+
+.boundary{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid salmon;
+    padding: 50px;
+    /* margin: 50px; */
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    margin-top: 10%;
+    /* align-content: left; */
+    /* margin-left: 15%; */
+}
+.myemail{
+    
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 20px;
+}
+.myemail input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.emaildiv{
+    display: flex;
+    flex-direction: row;
+    width: 780px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.fix-width{
+    width:100px;
+    text-align: left;
+}
+.register{
+    margin-left: 466px;
+    margin-top: 30px;
+    width: 130px;
+    padding:15px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    background-color: salmon;
+}
+.register:hover{
+    background-color: white;
+    color: salmon;
+    cursor: pointer;
+    transition: ease-in-out 0.8s;
+    
+}
+.registrationbody{
+    background-image:url( "https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-taobao-jewelry-fresh-and-simple-gold-jewelry-poster-image_194638.jpg");
+}
+.error{
+    border-color: red;
+}

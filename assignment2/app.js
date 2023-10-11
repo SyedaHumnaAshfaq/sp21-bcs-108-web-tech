@@ -3,13 +3,13 @@ const path = require('path')
 const app = express()
 const port = 3000
 
+app.use(express.static('public'));
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.sendFile(path.join(__dirname + '/markup.html'));
 })
-app.get('/registration', (req, res) => {
+app.get('/registration.html', (req, res) => {
     res.sendFile(path.join(__dirname + '/registration.html'));
-    res.sendFile(path.join(__dirname + '/scripting.js'));
-    res.sendFile(path.join(__dirname + '/style.css'));
+    
   })
 
 app.listen(port, () => {
