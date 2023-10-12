@@ -12,15 +12,14 @@ $(document).ready(function () {
             },
 
             submitHandler: function (form) {
-                // This function will be called when the form is submitted and validated successfully.
-                // You can add further processing logic here.
+                
                 alert("Thanks for Subscribing!");
-                return false; // Prevent the actual form submission for this example
+                return false; 
 
             }
         })
     })
-    // Initialize the jQuery Validate Plugin
+   
     $("#registration").validate({
         rules: {
 
