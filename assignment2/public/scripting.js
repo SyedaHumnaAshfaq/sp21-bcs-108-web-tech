@@ -61,6 +61,47 @@ $(document).ready(function () {
             return false; 
         }
     });
+    $("#Addtocart").click(function () {
+        alert("Please Log In First");
+    });
+    // $(".loginbtn").click(function () {
+    //     alert("you are logged in successfully");
+    // });
+
+    $("#loginform").validate({
+        rules: {
+
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 8
+            }
+        },
+        messages: {
+
+            email: {
+                required: "Please enter your email address",
+                email: "Please enter a valid email address"    
+            },
+            password: {
+                required: "Please enter a password",
+                minlength: "Password must be at least 8 characters long"
+            }
+            },
+        
+        Error: function(error,element){
+            $(element).addClass("error");
+
+        },
+        submitHandler: function (form) {
+          
+            alert("You are logged in successfully!");
+            return false; 
+        }
+    });
 });
 
 
