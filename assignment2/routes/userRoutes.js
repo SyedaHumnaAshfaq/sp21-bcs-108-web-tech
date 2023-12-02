@@ -4,11 +4,14 @@ const usercontroller = require('../controller/userController');
 
 const router = express.Router();
 const {requireAuthentication} = require('../middlewares/loginMiddleware');
-
+const {authenticateToken} = require('../middlewares/loginMiddleware');
 router.post('/register', usercontroller.register);
 router.post('/login', usercontroller.login);
 router.post('/logout', usercontroller.logout);
 router.get('/logout', usercontroller.logout);
+
+// api
+router.get('/api/users', authenticateToken,usercontroller.getUsers);
 
 router.get('/', function(req, res) {
   res.render('pages/markup');

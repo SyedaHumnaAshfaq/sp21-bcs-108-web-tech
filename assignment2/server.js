@@ -10,6 +10,7 @@ const connect = require("./configs/mongo")
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
+const jwt = require("jsonwebtoken");
 app.use(express.json()); //this is for sending the same data in receive that you initially send in req
 connect();
 app.use(cookieParser());
@@ -22,6 +23,7 @@ app.use(session({
   saveUninitialized: true,
   cookie: { secure: false, maxAge: 60000 }
 }));
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 

@@ -262,3 +262,9 @@ i{
     text-decoration:underline;
     color: salmon;
 }
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    color: salmon;
+    float: right;
+}
