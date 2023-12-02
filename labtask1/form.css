@@ -1,0 +1,62 @@
+.boundary{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid salmon;
+    padding: 50px;
+    /* margin: 50px; */
+    border-radius: 5px;
+    background-color: white;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+    margin-top: 10%;
+    /* align-content: left; */
+    /* margin-left: 15%; */
+}
+.myemail{
+    
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 20px;
+}
+.myemail input{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.emaildiv{
+    display: flex;
+    flex-direction: row;
+    width: 780px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.fix-width{
+    width:100px;
+    text-align: left;
+}
+.register{
+    margin-left: 466px;
+    margin-top: 30px;
+    width: 130px;
+    padding:15px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    background-color: salmon;
+}
+.register:hover{
+    background-color: white;
+    color: salmon;
+    cursor: pointer;
+    transition: ease-in-out 0.8s;
+    
+}
+body{
+    background-image:url( "https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-taobao-jewelry-fresh-and-simple-gold-jewelry-poster-image_194638.jpg");
+}

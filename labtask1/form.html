@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="boundary">
+        <form action="" id="registration" method="post">
+        <div class="emaildiv">
+            <div class="fix-width"><label for="" >Email Address</label></div>
+            <div class="myemail"><input type="email" id="email" name="email"></div>
+        </div>
+        <div class="emaildiv">
+            <div class="fix-width"><label for="" >Password</label></div>
+            <div class="myemail"><input type="password" id="password" name="password" required minlength="8"></div>
+        </div>
+        <div class="emaildiv">
+            <div class="fix-width"><label for="">Confirm Password</label></div>
+            <div class="myemail"><input type="password" id="confirmPassword" name="confirmPassword" required></div>
+        </div>
+        <button class="register">Register</button>
+    </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Initialize the jQuery Validate Plugin
+            $("#registration").validate({
+                rules: {
+                  
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength:8
+                    },
+                    confirmPassword: {
+                        required: true,
+                        equalTo: "#password"
+                    }
+                },
+                messages: {
+                    
+                    email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    },
+                    password: {
+                        required: "Please enter a password",
+                        minlength: "Password must be at least 8 characters long"
+                    },
+                    confirmPassword: {
+                        required: "Please confirm your password",
+                        equalTo: "Passwords do not match"
+                    }
+                },
+                submitHandler: function (form) {
+                    // This function will be called when the form is submitted and validated successfully.
+                    // You can add further processing logic here.
+                    alert("Form submitted successfully!");
+                    return false; // Prevent the actual form submission for this example
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
